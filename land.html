@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин LuxPods</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Arial', sans-serif; background: #f7f7f7; padding: 16px; }
+    .products { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 12px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .card h3 { margin-top: 10px; font-size: 16px; }
+    .card p { color: #666; margin: 4px 0; }
+    .price { font-size: 18px; font-weight: bold; color: #222; }
+    .btn {
+      margin-top: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .tabs {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      background: #fff;
+      border-top: 1px solid #ccc;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="margin-bottom: 16px;">Наши товары</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/150x150?text=S10+Premium" alt="Watch S10 Premium">
+      <h3>Watch S10 Premium</h3>
+      <p>Цвет: Чёрный</p>
+      <div class="price">7290 ₽</div>
+      <button class="btn">Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150x150?text=S9+Premium" alt="Watch S9 Premium">
+      <h3>Watch S9 Premium</h3>
+      <p>Цвет: Серый</p>
+      <div class="price">6990 ₽</div>
+      <button class="btn">Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150x150?text=AirPods+Max" alt="Наушники">
+      <h3>AirPods Max</h3>
+      <p>Цвет: Чёрный</p>
+      <div class="price">24990 ₽</div>
+      <button class="btn">Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150x150?text=Pods+Pro" alt="Наушники">
+      <h3>Pods Pro</h3>
+      <p>Цвет: Белый</p>
+      <div class="price">8490 ₽</div>
+      <button class="btn">Подробнее</button>
+    </div>
+  </div>
+  <div class="tabs">
+    <div class="tab">🏠 Главная</div>
+    <div class="tab">📦 Каталог</div>
+    <div class="tab">🔥 Акции</div>
+    <div class="tab">🛒 Корзина</div>
+  </div>
+</body>
+</html>
